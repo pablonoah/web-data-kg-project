@@ -1,0 +1,57 @@
+entity,label,start,end,source_url
+recent decades,DATE,359,373,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,1029,1032,https://www.cancer.gov/research/areas/treatment
+decades,DATE,1344,1351,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,1559,1562,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,1973,1976,https://www.cancer.gov/research/areas/treatment
+more than 50 years,DATE,2021,2039,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,2041,2044,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,2194,2197,https://www.cancer.gov/research/areas/treatment
+the National Institutes of Health,ORG,2263,2296,https://www.cancer.gov/research/areas/treatment
+Bethesda,GPE,2300,2308,https://www.cancer.gov/research/areas/treatment
+MD,GPE,2310,2312,https://www.cancer.gov/research/areas/treatment
+The Cancer Therapy Evaluation Program,ORG,2422,2459,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,2687,2690,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,2911,2914,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,2998,3001,https://www.cancer.gov/research/areas/treatment
+The NCI-60 Human Tumor Cell Lines Screen,PRODUCT,3482,3522,https://www.cancer.gov/research/areas/treatment
+The NCI-60 screen,PRODUCT,3722,3739,https://www.cancer.gov/research/areas/treatment
+yearly,DATE,3768,3774,https://www.cancer.gov/research/areas/treatment
+The Comparative Oncology Program,ORG,3863,3895,https://www.cancer.gov/research/areas/treatment
+ARTNet,ORG,4316,4322,https://www.cancer.gov/research/areas/treatment
+the Drug Resistance and Sensitivity Network,ORG,4486,4529,https://www.cancer.gov/research/areas/treatment
+DRSN,ORG,4531,4535,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,4541,4544,https://www.cancer.gov/research/areas/treatment
+Cancer Moonshot,ORG,4549,4564,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,4724,4727,https://www.cancer.gov/research/areas/treatment
+Human Cancer Models Initiative,ORG,4761,4791,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,5202,5205,https://www.cancer.gov/research/areas/treatment
+Molecular Analysis for Therapy Choice,PRODUCT,5258,5295,https://www.cancer.gov/research/areas/treatment
+NCI-MATCH,ORG,5516,5525,https://www.cancer.gov/research/areas/treatment
+ComboMATCH,PRODUCT,5571,5581,https://www.cancer.gov/research/areas/treatment
+MyeloMATCH,PRODUCT,5583,5593,https://www.cancer.gov/research/areas/treatment
+iMATCH,PRODUCT,5599,5605,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,5854,5857,https://www.cancer.gov/research/areas/treatment
+the Immuno-Oncology Translational Network,ORG,6406,6447,https://www.cancer.gov/research/areas/treatment
+IOTN,ORG,6449,6453,https://www.cancer.gov/research/areas/treatment
+the Pediatric Immunotherapy Network,ORG,6459,6494,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,6604,6607,https://www.cancer.gov/research/areas/treatment
+the National Institutes of Health,ORG,6666,6699,https://www.cancer.gov/research/areas/treatment
+The Translational Research Program,ORG,7135,7169,https://www.cancer.gov/research/areas/treatment
+the Specialized Programs of Excellence,ORG,7201,7239,https://www.cancer.gov/research/areas/treatment
+SPOREs,ORG,7241,7247,https://www.cancer.gov/research/areas/treatment
+The NCI Experimental Therapeutics Program,ORG,7481,7522,https://www.cancer.gov/research/areas/treatment
+NExT,ORG,7524,7528,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,7724,7727,https://www.cancer.gov/research/areas/treatment
+the NIH Clinical Center,ORG,7768,7791,https://www.cancer.gov/research/areas/treatment
+Supportive Care and Symptom Management,ORG,7875,7913,https://www.cancer.gov/research/areas/treatment
+Supportive Care and Symptom Management,ORG,7920,7958,https://www.cancer.gov/research/areas/treatment
+NCI,ORG,8323,8326,https://www.cancer.gov/research/areas/treatment
+Improving the Management of Symptoms,ORG,8387,8423,https://www.cancer.gov/research/areas/treatment
+NIH,ORG,9131,9134,https://www.cancer.gov/research/areas/treatment
+NIH,ORG,9225,9228,https://www.cancer.gov/research/areas/treatment
+FDA,ORG,9353,9356,https://www.cancer.gov/research/areas/treatment
+Mayo Clinic,ORG,6451,6462,https://www.mayoclinic.org/diseases-conditions/cancer/diagnosis-treatment/drc-20370594
+the National Cancer Institute,ORG,8435,8464,https://www.mayoclinic.org/diseases-conditions/cancer/diagnosis-treatment/drc-20370594
+the American Cancer Society,ORG,8469,8496,https://www.mayoclinic.org/diseases-conditions/cancer/diagnosis-treatment/drc-20370594
+"Nov. 19, 2024",DATE,12282,12295,https://www.mayoclinic.org/diseases-conditions/cancer/diagnosis-treatment/drc-20370594
