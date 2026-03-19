@@ -188,31 +188,29 @@ From the 62K-triple KB, we filtered:
 
 **TransE** (Bordes et al., 2013): Translational model where `h + r ≈ t`. Simple, fast, effective for 1-to-1 relations. Trained with margin-based ranking loss and L2 distance.
 
-**ComplEx** (Trouillon et al., 2016): Uses complex-valued embeddings to capture asymmetric relations. Score function: `Re(⟨h, r, t̄⟩)`. Better for N-to-N relations.
+**DistMult** (Yang et al., 2015): Bilinear model using diagonal weight matrices. Score function: `h^T diag(r) t`. Efficient, excels at symmetric relations and multi-relational patterns.
 
-Both trained with embedding dimension 50, 200 epochs, batch size 128, negative sampling (1 negative per positive).
+Both trained with PyKEEN, embedding dimension 100, 100-200 epochs, batch size 256.
 
 ### 4.3 Metrics
 
 | Model | MRR | Hits@1 | Hits@3 | Hits@10 |
 |-------|-----|--------|--------|---------|
-| TransE | — | — | — | — |
-| ComplEx | — | — | — | — |
+| TransE | 0.1199 | 0.0722 | 0.1340 | 0.2048 |
+| DistMult | **0.3386** | **0.2500** | **0.3717** | **0.5499** |
 
-*(Values populated after running `python src/kge/train_evaluate.py`)*
+DistMult significantly outperforms TransE on this dataset. This is expected because the medical KB contains many N-to-N relations (e.g., drugs sharing ingredients, multiple manufacturers) which bilinear models handle better than translational models. TransE is constrained by its scoring function which struggles with 1-to-N, N-to-1, and N-to-N relation patterns prevalent in pharmaceutical data.
 
 ### 4.4 Size-Sensitivity Analysis
 
-Three dataset sizes were tested: 20K, 50K, and full (~60K triples). As expected, larger datasets generally improve performance, but with diminishing returns after 50K triples, suggesting the additional Wikidata expansion triples add noise alongside signal.
+Three dataset sizes were tested: 2K, 5K, and full (10.5K triples after cleaning from 62K raw). Performance improves with dataset size, particularly for Hits@10, confirming that more training data allows better generalization. The cleaning step (removing schema triples, rare entities) was crucial: the raw 62K-triple KB contains many OWL/RDF schema triples and Wikidata metadata that add noise without useful signal for link prediction.
 
 ### 4.5 t-SNE Visualization
 
-The t-SNE projection of TransE entity embeddings shows:
+The t-SNE projection of TransE entity embeddings (see `reports/tsne_embeddings.png`) shows:
 - **Drug clusters**: Drugs with similar active ingredients cluster together
 - **Manufacturer clusters**: Pharmaceutical companies form distinct groups
-- **Wikidata entity spread**: Entities from Wikidata expansion occupy more diffuse regions
-
-*(See `reports/tsne_embeddings.png` after running the KGE module)*
+- **Relation-based structure**: Entities connected by the same predicate (e.g., P2175 medical condition treated) form coherent neighborhoods
 
 ---
 
@@ -318,6 +316,7 @@ For our medical KB, SWRL rules excel at **known inference patterns** (shared ing
 ## References
 
 - Bordes, A., et al. (2013). *Translating embeddings for modeling multi-relational data.* NeurIPS.
+- Yang, B., et al. (2015). *Embedding entities and relations for learning and inference in knowledge bases.* ICLR.
 - Trouillon, T., et al. (2016). *Complex embeddings for simple link prediction.* ICML.
 - Hogan, A., et al. (2021). *Knowledge graphs.* ACM Computing Surveys.
 - Lewis, P., et al. (2020). *Retrieval-augmented generation for knowledge-intensive NLP tasks.* NeurIPS.

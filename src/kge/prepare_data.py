@@ -126,15 +126,16 @@ def save_id_mapping(mapping, filepath):
             f.write(f"{shorten_uri(key)}\t{idx}\n")
 
 
-def create_size_subsets(triples, sizes=[20000, 50000]):
+def create_size_subsets(triples):
     """Create subsets of different sizes for size-sensitivity analysis."""
+    n = len(triples)
+    sizes = [max(1000, n // 5), max(2000, n // 2), n]
     subsets = {}
     for size in sizes:
-        if size < len(triples):
+        if size < n:
             subsets[size] = random.sample(triples, size)
         else:
             subsets[size] = triples[:]
-    subsets[len(triples)] = triples[:]
     return subsets
 
 
@@ -173,7 +174,7 @@ def prepare_kge_data(input_nt="kg_artifacts/final_kb.nt", output_dir="data/kge")
     save_id_mapping(relation2id, os.path.join(output_dir, "relation2id.txt"))
 
     # Save size subsets
-    subsets = create_size_subsets(triples, sizes=[20000, 50000])
+    subsets = create_size_subsets(triples)
     for size, subset in subsets.items():
         subset_dir = os.path.join(output_dir, f"subset_{size}")
         os.makedirs(subset_dir, exist_ok=True)

@@ -62,37 +62,28 @@ def train_with_pykeen(data_dir, model_name="TransE", epochs=100, embedding_dim=1
     valid = load_triples(os.path.join(data_dir, "valid.txt"))
     test = load_triples(os.path.join(data_dir, "test.txt"))
 
-    # Convert to numpy
-    all_triples = train + valid + test
+    # Build shared entity/relation mappings from all splits
     ent2id, rel2id = build_mappings(train, valid, test)
 
-    train_np = triples_to_numpy(train, ent2id, rel2id)
-    valid_np = triples_to_numpy(valid, ent2id, rel2id)
-    test_np = triples_to_numpy(test, ent2id, rel2id)
+    # Create labeled triples as numpy string arrays
+    train_arr = np.array(train, dtype=str)
+    valid_arr = np.array(valid, dtype=str)
+    test_arr = np.array(test, dtype=str)
 
-    # Create TriplesFactory
-    id2ent = {v: k for k, v in ent2id.items()}
-    id2rel = {v: k for k, v in rel2id.items()}
-
-    tf_train = TriplesFactory.create(
-        mapped_triples=train_np,
-        entity_to_id=ent2id,
-        relation_to_id=rel2id,
+    # Use from_labeled_triples with shared mappings
+    tf_train = TriplesFactory.from_labeled_triples(
+        train_arr, entity_to_id=ent2id, relation_to_id=rel2id,
     )
-    tf_valid = TriplesFactory.create(
-        mapped_triples=valid_np,
-        entity_to_id=ent2id,
-        relation_to_id=rel2id,
+    tf_valid = TriplesFactory.from_labeled_triples(
+        valid_arr, entity_to_id=ent2id, relation_to_id=rel2id,
     )
-    tf_test = TriplesFactory.create(
-        mapped_triples=test_np,
-        entity_to_id=ent2id,
-        relation_to_id=rel2id,
+    tf_test = TriplesFactory.from_labeled_triples(
+        test_arr, entity_to_id=ent2id, relation_to_id=rel2id,
     )
 
     print(f"\n{'='*60}")
     print(f"Training {model_name} (dim={embedding_dim}, epochs={epochs})")
-    print(f"  Train: {len(train_np)} | Valid: {len(valid_np)} | Test: {len(test_np)}")
+    print(f"  Train: {len(train_arr)} | Valid: {len(valid_arr)} | Test: {len(test_arr)}")
     print(f"  Entities: {len(ent2id)} | Relations: {len(rel2id)}")
     print(f"{'='*60}")
 
