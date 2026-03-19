@@ -1,0 +1,242 @@
+@prefix med: <http://example.org/medical/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+med:A-S_Medication_Solutions owl:sameAs wd:Q88465311 .
+
+med:ABBE_Laboratories_Inc a med:Manufacturer ;
+    rdfs:label "ABBE Laboratories Inc" .
+
+med:ACETAMINOPHEN owl:sameAs wd:Q57055 .
+
+med:AESCULUS_HIPPOCASTANUM_FLOWER a med:ActiveIngredient ;
+    rdfs:label "AESCULUS HIPPOCASTANUM FLOWER" .
+
+med:ALUMINUM_CHLOROHYDRATE owl:sameAs wd:Q27280046 .
+
+med:Acid_Reducer owl:sameAs wd:Q111370830 .
+
+med:Amazoncom_Services_LLC a med:Manufacturer ;
+    rdfs:label "Amazoncom Services LLC" .
+
+med:American_Health_Packaging a med:Manufacturer ;
+    rdfs:label "American Health Packaging" .
+
+med:Antibacterial_2X a med:Drug ;
+    rdfs:label "Antibacterial 2X" .
+
+med:Anticavity_Rinse a med:Drug ;
+    rdfs:label "Anticavity Rinse" .
+
+med:Atlantis_Consumer_Healthcare_Inc a med:Manufacturer ;
+    rdfs:label "Atlantis Consumer Healthcare Inc" .
+
+med:Aurobindo_Pharma_Limited owl:sameAs wd:Q4822431 .
+
+med:BENZALKONIUM_CHLORIDE owl:sameAs wd:Q72445001 .
+
+med:BENZOCAINE owl:sameAs wd:Q422745 .
+
+med:BETAMETHASONE_DIPROPIONATE owl:sameAs wd:Q4897349 .
+
+med:Betadine owl:sameAs wd:Q241516 .
+
+med:Betamethasone_Dipropionate owl:sameAs wd:Q4897349 .
+
+med:CALCIUM_ACETATE owl:sameAs wd:Q409251 .
+
+med:CLEMATIS_VITALBA_FLOWER a med:ActiveIngredient ;
+    rdfs:label "CLEMATIS VITALBA FLOWER" .
+
+med:CVS_Pharmacy owl:sameAs wd:Q2078880 .
+
+med:Calcium_Acetate owl:sameAs wd:Q409251 .
+
+med:Cariba_International a med:Manufacturer ;
+    rdfs:label "Cariba International" .
+
+med:Cipla_USA_Inc a med:Manufacturer ;
+    rdfs:label "Cipla USA Inc" .
+
+med:ENTRESTO owl:sameAs wd:Q29005800 .
+
+med:ESOMEPRAZOLE_MAGNESIUM owl:sameAs wd:Q47488036 .
+
+med:ETODOLAC owl:sameAs wd:Q2465218 .
+
+med:Etodolac owl:sameAs wd:Q2465218 .
+
+med:FLUDROCORTISONE_ACETATE owl:sameAs wd:Q27106657 .
+
+med:FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00 a med:Drug ;
+    rdfs:label "FOREVER SKIN GLOW 24h wear radiant foundation Perfection and hydration Concentrated floral skincare with suncreen Broad spectrum SPF 15 00" .
+
+med:FOURSTAR_GROUP_USA_INC a med:Manufacturer ;
+    rdfs:label "FOURSTAR GROUP USA INC" .
+
+med:Fludrocortisone_Acetate owl:sameAs wd:Q27106657 .
+
+med:Foster_and_Thrive_Advanced_Relief_Eye_Drops a med:Drug ;
+    rdfs:label "Foster and Thrive Advanced Relief Eye Drops" .
+
+med:Foster_and_Thrive_Dry_Eye_Relief a med:Drug ;
+    rdfs:label "Foster and Thrive Dry Eye Relief" .
+
+med:GLIMEPIRIDE owl:sameAs wd:Q425027 .
+
+med:GLYCERIN owl:sameAs wd:Q132501 .
+
+med:Glimepiride owl:sameAs wd:Q425027 .
+
+med:HELIANTHEMUM_NUMMULARIUM_FLOWER a med:ActiveIngredient ;
+    rdfs:label "HELIANTHEMUM NUMMULARIUM FLOWER" .
+
+med:HYDROCORTISONE owl:sameAs wd:Q190875 .
+
+med:IMPATIENS_GLANDULIFERA_FLOWER a med:ActiveIngredient ;
+    rdfs:label "IMPATIENS GLANDULIFERA FLOWER" .
+
+med:ISOPROPYL_ALCOHOL owl:sameAs wd:Q16392 .
+
+med:Isopropyl_Alcohol owl:sameAs wd:Q16392 .
+
+med:LANOLIN owl:sameAs wd:Q911098 .
+
+med:Lights_Medical_Manufacture_Co_Ltd a med:Manufacturer ;
+    rdfs:label "Lights Medical Manufacture Co Ltd" .
+
+med:Lights_Povindone_Iodine_Scrub a med:Drug ;
+    rdfs:label "Lights Povindone Iodine Scrub" .
+
+med:METHOCARBAMOL owl:sameAs wd:Q411456 .
+
+med:Meijer_Distribution_Inc a med:Manufacturer ;
+    rdfs:label "Meijer Distribution Inc" .
+
+med:Meijer_Inc owl:sameAs wd:Q1917753 .
+
+med:Mekinist owl:sameAs wd:Q7833138 .
+
+med:Methocarbamol owl:sameAs wd:Q411456 .
+
+med:Moisturizing_Antibacterial a med:Drug ;
+    rdfs:label "Moisturizing Antibacterial" .
+
+med:NAPROXEN owl:sameAs wd:Q1215575 .
+
+med:NICOTINE owl:sameAs wd:Q12144 .
+
+med:Naproxen owl:sameAs wd:Q1215575 .
+
+med:Nelson_Bach_USA_Ltd a med:Manufacturer ;
+    rdfs:label "Nelson Bach USA Ltd" .
+
+med:Nicotine owl:sameAs wd:Q12144 .
+
+med:Novartis_Pharmaceuticals_Corporation a med:Manufacturer ;
+    rdfs:label "Novartis Pharmaceuticals Corporation" .
+
+med:OASIS_Medical_Inc a med:Manufacturer ;
+    rdfs:label "OASIS Medical Inc" .
+
+med:OASIS_Tears_Lubricant_Eye a med:Drug ;
+    rdfs:label "OASIS Tears Lubricant Eye" .
+
+med:OCTISALATE owl:sameAs wd:Q27160526 .
+
+med:OPHTHALMIC owl:sameAs wd:Q15759091 .
+
+med:ORAL owl:sameAs wd:Q37065880 .
+
+med:ORNITHOGALUM_UMBELLATUM_WHOLE a med:ActiveIngredient ;
+    rdfs:label "ORNITHOGALUM UMBELLATUM WHOLE" .
+
+med:PETROLATUM owl:sameAs wd:Q457239 .
+
+med:POLYETHYLENE_GLYCOL_400 owl:sameAs wd:Q410083 .
+
+med:POVIDONE-IODINE owl:sameAs wd:Q241516 .
+
+med:PRUNUS_CERASIFERA_FLOWER a med:ActiveIngredient ;
+    rdfs:label "PRUNUS CERASIFERA FLOWER" .
+
+med:Pain_Reliever_Extra_Strength a med:Drug ;
+    rdfs:label "Pain Reliever Extra Strength" .
+
+med:Parfums_Christian_Dior owl:sameAs wd:Q3365053 .
+
+med:Proficient_Rx_LP a med:Manufacturer ;
+    rdfs:label "Proficient Rx LP" .
+
+med:Quick_Action owl:sameAs wd:Q134449529 .
+
+med:RESORCINOL owl:sameAs wd:Q408865 .
+
+med:Rescue_Sleep a med:Drug ;
+    rdfs:label "Rescue Sleep" .
+
+med:Rite_Aid_Corporation owl:sameAs wd:Q3433273 .
+
+med:Rxhomeo_Private_Limited_dba_Rxhomeo_Inc a med:Manufacturer ;
+    rdfs:label "Rxhomeo Private Limited dba Rxhomeo Inc" .
+
+med:SACUBITRIL owl:sameAs wd:Q17811448 .
+
+med:SALICYLIC_ACID owl:sameAs wd:Q193572 .
+
+med:SERTRALINE_HYDROCHLORIDE owl:sameAs wd:Q27108281 .
+
+med:SILICEA owl:sameAs wd:Q130101986 .
+
+med:SILICON_DIOXIDE owl:sameAs wd:Q116269 .
+
+med:SODIUM_FLUORIDE owl:sameAs wd:Q407520 .
+
+med:Sante_Manufacturing_Inc a med:Manufacturer ;
+    rdfs:label "Sante Manufacturing Inc" .
+
+med:Sertraline_Hydrochloride owl:sameAs wd:Q27108281 .
+
+med:Sodalis_USA_LLC a med:Manufacturer ;
+    rdfs:label "Sodalis USA LLC" .
+
+med:Strategic_Sourcing_Services_LLC a med:Manufacturer ;
+    rdfs:label "Strategic Sourcing Services LLC" .
+
+med:Sun_Pharmaceutical_Industries_Inc a med:Manufacturer ;
+    rdfs:label "Sun Pharmaceutical Industries Inc" .
+
+med:Sure_Complete_Confidence_Antiperspirant_Deodorant_Aerosol_Unscented a med:Drug ;
+    rdfs:label "Sure Complete Confidence Antiperspirant Deodorant Aerosol Unscented" .
+
+med:TETRAHYDROZOLINE_HYDROCHLORIDE owl:sameAs wd:Q27237368 .
+
+med:TITANIUM_DIOXIDE owl:sameAs wd:Q193521 .
+
+med:TOPICAL owl:sameAs wd:Q238512 .
+
+med:TRAMETINIB_DIMETHYL_SULFOXIDE owl:sameAs wd:Q7833138 .
+
+med:Thera_Plus_Maximum_Strength_Feminine_Anti-Itch a med:Drug ;
+    rdfs:label "Thera Plus Maximum Strength Feminine Anti-Itch" .
+
+med:VALSARTAN owl:sameAs wd:Q155472 .
+
+med:VARENICLINE_TARTRATE owl:sameAs wd:Q27157813 .
+
+med:VERADEX-E a med:Drug ;
+    rdfs:label "VERADEX-E" .
+
+med:Valu_Merchandisers_Company a med:Manufacturer ;
+    rdfs:label "Valu Merchandisers Company" .
+
+med:Varenicline owl:sameAs wd:Q411330 .
+
+med:Walmart_Inc owl:sameAs wd:Q483551 .
+
+med:anti_itch owl:sameAs wd:Q2853347 .
+
+med:basic_care_acetaminophen a med:Drug ;
+    rdfs:label "basic care acetaminophen" .
+

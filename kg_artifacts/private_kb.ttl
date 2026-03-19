@@ -1,0 +1,471 @@
+@prefix med: <http://example.org/medical/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prop: <http://example.org/medical/prop/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+med:Acid_Reducer a med:Drug ;
+    prop:brandName "Acid Reducer"^^xsd:string ;
+    prop:genericName "ESOMEPRAZOLE MAGNESIUM"^^xsd:string ;
+    prop:hasActiveIngredient med:ESOMEPRAZOLE_MAGNESIUM ;
+    prop:hasManufacturer med:CVS_Pharmacy ;
+    prop:hasRoute med:ORAL .
+
+med:Antibacterial_2X a med:Drug ;
+    prop:brandName "Antibacterial 2X"^^xsd:string ;
+    prop:genericName "BENZALKONIUM CHLORIDE"^^xsd:string ;
+    prop:hasActiveIngredient med:BENZALKONIUM_CHLORIDE ;
+    prop:hasManufacturer med:Sante_Manufacturing_Inc ;
+    prop:hasRoute med:TOPICAL .
+
+med:Anticavity_Rinse a med:Drug ;
+    prop:brandName "Anticavity Rinse"^^xsd:string ;
+    prop:genericName "SODIUM FLUORIDE"^^xsd:string ;
+    prop:hasActiveIngredient med:SODIUM_FLUORIDE ;
+    prop:hasManufacturer med:Meijer_Distribution_Inc ;
+    prop:hasRoute med:ORAL .
+
+med:Betadine a med:Drug ;
+    prop:brandName "Betadine"^^xsd:string ;
+    prop:genericName "POVIDONE-IODINE"^^xsd:string ;
+    prop:hasActiveIngredient med:POVIDONE-IODINE ;
+    prop:hasManufacturer med:Atlantis_Consumer_Healthcare_Inc ;
+    prop:hasRoute med:TOPICAL .
+
+med:Betamethasone_Dipropionate a med:Drug ;
+    prop:brandName "Betamethasone Dipropionate"^^xsd:string ;
+    prop:genericName "BETAMETHASONE DIPROPIONATE"^^xsd:string ;
+    prop:hasActiveIngredient med:BETAMETHASONE_DIPROPIONATE ;
+    prop:hasManufacturer med:Sun_Pharmaceutical_Industries_Inc ;
+    prop:hasRoute med:TOPICAL .
+
+med:Calcium_Acetate a med:Drug ;
+    prop:brandName "Calcium Acetate"^^xsd:string ;
+    prop:genericName "CALCIUM ACETATE"^^xsd:string ;
+    prop:hasActiveIngredient med:CALCIUM_ACETATE ;
+    prop:hasManufacturer med:Cipla_USA_Inc ;
+    prop:hasRoute med:ORAL .
+
+med:ENTRESTO a med:Drug ;
+    prop:brandName "ENTRESTO"^^xsd:string ;
+    prop:genericName "SACUBITRIL AND VALSARTAN"^^xsd:string ;
+    prop:hasActiveIngredient med:SACUBITRIL,
+        med:VALSARTAN ;
+    prop:hasManufacturer med:Novartis_Pharmaceuticals_Corporation ;
+    prop:hasRoute med:ORAL .
+
+med:Etodolac a med:Drug ;
+    prop:brandName "Etodolac"^^xsd:string ;
+    prop:genericName "ETODOLAC"^^xsd:string ;
+    prop:hasActiveIngredient med:ETODOLAC ;
+    prop:hasManufacturer med:A-S_Medication_Solutions ;
+    prop:hasRoute med:ORAL .
+
+med:FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00 a med:Drug ;
+    prop:brandName "FOREVER SKIN GLOW 24h wear radiant foundation Perfection and hydration Concentrated floral skincare with suncreen Broad spectrum SPF 15 00"^^xsd:string ;
+    prop:genericName "OCTISALATE, TITANIUM DIOXIDE"^^xsd:string ;
+    prop:hasActiveIngredient med:OCTISALATE,
+        med:TITANIUM_DIOXIDE ;
+    prop:hasManufacturer med:Parfums_Christian_Dior ;
+    prop:hasRoute med:TOPICAL .
+
+med:Fludrocortisone_Acetate a med:Drug ;
+    prop:brandName "Fludrocortisone Acetate"^^xsd:string ;
+    prop:genericName "FLUDROCORTISONE ACETATE"^^xsd:string ;
+    prop:hasActiveIngredient med:FLUDROCORTISONE_ACETATE ;
+    prop:hasManufacturer med:American_Health_Packaging ;
+    prop:hasRoute med:ORAL .
+
+med:Foster_and_Thrive_Advanced_Relief_Eye_Drops a med:Drug ;
+    prop:brandName "Foster and Thrive Advanced Relief Eye Drops"^^xsd:string ;
+    prop:genericName "POLYETHYLENE GLYCOL 400, TETRAHYDROZOLINE HCL"^^xsd:string ;
+    prop:hasActiveIngredient med:POLYETHYLENE_GLYCOL_400,
+        med:TETRAHYDROZOLINE_HYDROCHLORIDE ;
+    prop:hasManufacturer med:Strategic_Sourcing_Services_LLC ;
+    prop:hasRoute med:OPHTHALMIC .
+
+med:Foster_and_Thrive_Dry_Eye_Relief a med:Drug ;
+    prop:brandName "Foster and Thrive Dry Eye Relief"^^xsd:string ;
+    prop:genericName "POLYETHYLENE GLYCOL 400"^^xsd:string ;
+    prop:hasActiveIngredient med:POLYETHYLENE_GLYCOL_400 ;
+    prop:hasManufacturer med:Strategic_Sourcing_Services_LLC ;
+    prop:hasRoute med:OPHTHALMIC .
+
+med:Glimepiride a med:Drug ;
+    prop:brandName "Glimepiride"^^xsd:string ;
+    prop:genericName "GLIMEPIRIDE"^^xsd:string ;
+    prop:hasActiveIngredient med:GLIMEPIRIDE ;
+    prop:hasManufacturer med:American_Health_Packaging ;
+    prop:hasRoute med:ORAL .
+
+med:Isopropyl_Alcohol a med:Drug ;
+    prop:brandName "Isopropyl Alcohol"^^xsd:string ;
+    prop:genericName "ISOPROPYL ALCOHOL"^^xsd:string ;
+    prop:hasActiveIngredient med:ISOPROPYL_ALCOHOL ;
+    prop:hasManufacturer med:Cariba_International ;
+    prop:hasRoute med:TOPICAL .
+
+med:Lights_Povindone_Iodine_Scrub a med:Drug ;
+    prop:brandName "Lights Povindone Iodine Scrub"^^xsd:string ;
+    prop:genericName "POVIDONE-IODINE"^^xsd:string ;
+    prop:hasActiveIngredient med:POVIDONE-IODINE ;
+    prop:hasManufacturer med:Lights_Medical_Manufacture_Co_Ltd ;
+    prop:hasRoute med:TOPICAL .
+
+med:Mekinist a med:Drug ;
+    prop:brandName "Mekinist"^^xsd:string ;
+    prop:genericName "TRAMETINIB"^^xsd:string ;
+    prop:hasActiveIngredient med:TRAMETINIB_DIMETHYL_SULFOXIDE ;
+    prop:hasManufacturer med:Novartis_Pharmaceuticals_Corporation ;
+    prop:hasRoute med:ORAL .
+
+med:Methocarbamol a med:Drug ;
+    prop:brandName "Methocarbamol"^^xsd:string ;
+    prop:genericName "METHOCARBAMOL"^^xsd:string ;
+    prop:hasActiveIngredient med:METHOCARBAMOL ;
+    prop:hasManufacturer med:Proficient_Rx_LP ;
+    prop:hasRoute med:ORAL .
+
+med:Moisturizing_Antibacterial a med:Drug ;
+    prop:brandName "Moisturizing Antibacterial"^^xsd:string ;
+    prop:genericName "BENZALKONIUM CHLORIDE"^^xsd:string ;
+    prop:hasActiveIngredient med:BENZALKONIUM_CHLORIDE ;
+    prop:hasManufacturer med:Walmart_Inc ;
+    prop:hasRoute med:TOPICAL .
+
+med:Naproxen a med:Drug ;
+    prop:brandName "Naproxen"^^xsd:string ;
+    prop:genericName "NAPROXEN"^^xsd:string ;
+    prop:hasActiveIngredient med:NAPROXEN ;
+    prop:hasManufacturer med:A-S_Medication_Solutions ;
+    prop:hasRoute med:ORAL .
+
+med:Nicotine a med:Drug ;
+    prop:brandName "Nicotine"^^xsd:string ;
+    prop:genericName "NICOTINE POLACRILEX"^^xsd:string ;
+    prop:hasActiveIngredient med:NICOTINE ;
+    prop:hasManufacturer med:Rite_Aid_Corporation ;
+    prop:hasRoute med:ORAL .
+
+med:OASIS_Tears_Lubricant_Eye a med:Drug ;
+    prop:brandName "OASIS Tears Lubricant Eye"^^xsd:string ;
+    prop:genericName "GLYCERIN"^^xsd:string ;
+    prop:hasActiveIngredient med:GLYCERIN ;
+    prop:hasManufacturer med:OASIS_Medical_Inc ;
+    prop:hasRoute med:OPHTHALMIC .
+
+med:Pain_Reliever_Extra_Strength a med:Drug ;
+    prop:brandName "Pain Reliever Extra Strength"^^xsd:string ;
+    prop:genericName "ACETAMINOPHEN"^^xsd:string ;
+    prop:hasActiveIngredient med:ACETAMINOPHEN ;
+    prop:hasManufacturer med:Valu_Merchandisers_Company ;
+    prop:hasRoute med:ORAL .
+
+med:Quick_Action a med:Drug ;
+    prop:brandName "Quick Action"^^xsd:string ;
+    prop:genericName "SALICYLIC ACID"^^xsd:string ;
+    prop:hasActiveIngredient med:SALICYLIC_ACID ;
+    prop:hasManufacturer med:Walmart_Inc ;
+    prop:hasRoute med:TOPICAL .
+
+med:Rescue_Sleep a med:Drug ;
+    prop:brandName "Rescue Sleep"^^xsd:string ;
+    prop:genericName "HELIANTHEMUM NUMMULARIUM FLOWER, CLEMATIS VITALBA FLOWER, IMPATIENS GLANDULIFERA FLOWER, PRUNUS CERASIFERA FLOWER, ORNITHOGALUM UMBELLATUM, AND AESCULUS HIPPOCASTANUM FLOWER"^^xsd:string ;
+    prop:hasActiveIngredient med:AESCULUS_HIPPOCASTANUM_FLOWER,
+        med:CLEMATIS_VITALBA_FLOWER,
+        med:HELIANTHEMUM_NUMMULARIUM_FLOWER,
+        med:IMPATIENS_GLANDULIFERA_FLOWER,
+        med:ORNITHOGALUM_UMBELLATUM_WHOLE,
+        med:PRUNUS_CERASIFERA_FLOWER ;
+    prop:hasManufacturer med:Nelson_Bach_USA_Ltd ;
+    prop:hasRoute med:ORAL .
+
+med:SILICEA a med:Drug ;
+    prop:brandName "SILICEA"^^xsd:string ;
+    prop:genericName "SILICEA"^^xsd:string ;
+    prop:hasActiveIngredient med:SILICON_DIOXIDE ;
+    prop:hasManufacturer med:Rxhomeo_Private_Limited_dba_Rxhomeo_Inc ;
+    prop:hasRoute med:ORAL .
+
+med:Sertraline_Hydrochloride a med:Drug ;
+    prop:brandName "Sertraline Hydrochloride"^^xsd:string ;
+    prop:genericName "SERTRALINE HYDROCHLORIDE"^^xsd:string ;
+    prop:hasActiveIngredient med:SERTRALINE_HYDROCHLORIDE ;
+    prop:hasManufacturer med:Proficient_Rx_LP ;
+    prop:hasRoute med:ORAL .
+
+med:Sure_Complete_Confidence_Antiperspirant_Deodorant_Aerosol_Unscented a med:Drug ;
+    prop:brandName "Sure Complete Confidence Antiperspirant Deodorant Aerosol, Unscented"^^xsd:string ;
+    prop:genericName "ALUMINUM CHLOROHYDRATE"^^xsd:string ;
+    prop:hasActiveIngredient med:ALUMINUM_CHLOROHYDRATE ;
+    prop:hasManufacturer med:Sodalis_USA_LLC ;
+    prop:hasRoute med:TOPICAL .
+
+med:Thera_Plus_Maximum_Strength_Feminine_Anti-Itch a med:Drug ;
+    prop:brandName "Thera Plus Maximum Strength Feminine Anti-Itch"^^xsd:string ;
+    prop:genericName "BENZOCAINE, RESORCINOL"^^xsd:string ;
+    prop:hasActiveIngredient med:BENZOCAINE,
+        med:RESORCINOL ;
+    prop:hasManufacturer med:FOURSTAR_GROUP_USA_INC ;
+    prop:hasRoute med:TOPICAL .
+
+med:VERADEX-E a med:Drug ;
+    prop:brandName "VERADEX-E"^^xsd:string ;
+    prop:genericName "PETROLATUM AND LANOLIN"^^xsd:string ;
+    prop:hasActiveIngredient med:LANOLIN,
+        med:PETROLATUM ;
+    prop:hasManufacturer med:ABBE_Laboratories_Inc ;
+    prop:hasRoute med:TOPICAL .
+
+med:Varenicline a med:Drug ;
+    prop:brandName "Varenicline"^^xsd:string ;
+    prop:genericName "VARENICLINE"^^xsd:string ;
+    prop:hasActiveIngredient med:VARENICLINE_TARTRATE ;
+    prop:hasManufacturer med:Aurobindo_Pharma_Limited ;
+    prop:hasRoute med:ORAL .
+
+med:anti_itch a med:Drug ;
+    prop:brandName "anti itch"^^xsd:string ;
+    prop:genericName "HYDROCORTISONE"^^xsd:string ;
+    prop:hasActiveIngredient med:HYDROCORTISONE ;
+    prop:hasManufacturer med:Meijer_Inc ;
+    prop:hasRoute med:TOPICAL .
+
+med:basic_care_acetaminophen a med:Drug ;
+    prop:brandName "basic care acetaminophen"^^xsd:string ;
+    prop:genericName "ACETAMINOPHEN"^^xsd:string ;
+    prop:hasActiveIngredient med:ACETAMINOPHEN ;
+    prop:hasManufacturer med:Amazoncom_Services_LLC ;
+    prop:hasRoute med:ORAL .
+
+prop:brandName a owl:DatatypeProperty .
+
+prop:genericName a owl:DatatypeProperty .
+
+prop:hasActiveIngredient a owl:ObjectProperty ;
+    rdfs:domain med:Drug ;
+    rdfs:range med:ActiveIngredient .
+
+prop:hasDosageForm a owl:ObjectProperty ;
+    rdfs:domain med:Drug ;
+    rdfs:range med:DosageForm .
+
+prop:hasManufacturer a owl:ObjectProperty ;
+    rdfs:domain med:Drug ;
+    rdfs:range med:Manufacturer .
+
+prop:hasRoute a owl:ObjectProperty ;
+    rdfs:domain med:Drug ;
+    rdfs:range med:Route .
+
+med:ABBE_Laboratories_Inc a med:Manufacturer ;
+    rdfs:label "ABBE Laboratories, Inc." .
+
+med:AESCULUS_HIPPOCASTANUM_FLOWER a med:ActiveIngredient ;
+    rdfs:label "AESCULUS HIPPOCASTANUM FLOWER" .
+
+med:ALUMINUM_CHLOROHYDRATE a med:ActiveIngredient ;
+    rdfs:label "ALUMINUM CHLOROHYDRATE" .
+
+med:Amazoncom_Services_LLC a med:Manufacturer ;
+    rdfs:label "Amazon.com Services LLC" .
+
+med:Atlantis_Consumer_Healthcare_Inc a med:Manufacturer ;
+    rdfs:label "Atlantis Consumer Healthcare, Inc." .
+
+med:Aurobindo_Pharma_Limited a med:Manufacturer ;
+    rdfs:label "Aurobindo Pharma Limited" .
+
+med:BENZOCAINE a med:ActiveIngredient ;
+    rdfs:label "BENZOCAINE" .
+
+med:BETAMETHASONE_DIPROPIONATE a med:ActiveIngredient ;
+    rdfs:label "BETAMETHASONE DIPROPIONATE" .
+
+med:CALCIUM_ACETATE a med:ActiveIngredient ;
+    rdfs:label "CALCIUM ACETATE" .
+
+med:CLEMATIS_VITALBA_FLOWER a med:ActiveIngredient ;
+    rdfs:label "CLEMATIS VITALBA FLOWER" .
+
+med:CVS_Pharmacy a med:Manufacturer ;
+    rdfs:label "CVS Pharmacy" .
+
+med:Cariba_International a med:Manufacturer ;
+    rdfs:label "Cariba International" .
+
+med:Cipla_USA_Inc a med:Manufacturer ;
+    rdfs:label "Cipla USA Inc.," .
+
+med:DosageForm a owl:Class .
+
+med:ESOMEPRAZOLE_MAGNESIUM a med:ActiveIngredient ;
+    rdfs:label "ESOMEPRAZOLE MAGNESIUM" .
+
+med:ETODOLAC a med:ActiveIngredient ;
+    rdfs:label "ETODOLAC" .
+
+med:FLUDROCORTISONE_ACETATE a med:ActiveIngredient ;
+    rdfs:label "FLUDROCORTISONE ACETATE" .
+
+med:FOURSTAR_GROUP_USA_INC a med:Manufacturer ;
+    rdfs:label "FOURSTAR GROUP USA, INC." .
+
+med:GLIMEPIRIDE a med:ActiveIngredient ;
+    rdfs:label "GLIMEPIRIDE" .
+
+med:GLYCERIN a med:ActiveIngredient ;
+    rdfs:label "GLYCERIN" .
+
+med:HELIANTHEMUM_NUMMULARIUM_FLOWER a med:ActiveIngredient ;
+    rdfs:label "HELIANTHEMUM NUMMULARIUM FLOWER" .
+
+med:HYDROCORTISONE a med:ActiveIngredient ;
+    rdfs:label "HYDROCORTISONE" .
+
+med:IMPATIENS_GLANDULIFERA_FLOWER a med:ActiveIngredient ;
+    rdfs:label "IMPATIENS GLANDULIFERA FLOWER" .
+
+med:ISOPROPYL_ALCOHOL a med:ActiveIngredient ;
+    rdfs:label "ISOPROPYL ALCOHOL" .
+
+med:LANOLIN a med:ActiveIngredient ;
+    rdfs:label "LANOLIN" .
+
+med:Lights_Medical_Manufacture_Co_Ltd a med:Manufacturer ;
+    rdfs:label "Lights Medical Manufacture Co., Ltd." .
+
+med:METHOCARBAMOL a med:ActiveIngredient ;
+    rdfs:label "METHOCARBAMOL" .
+
+med:Meijer_Distribution_Inc a med:Manufacturer ;
+    rdfs:label "Meijer Distribution, Inc." .
+
+med:Meijer_Inc a med:Manufacturer ;
+    rdfs:label "Meijer, Inc." .
+
+med:NAPROXEN a med:ActiveIngredient ;
+    rdfs:label "NAPROXEN" .
+
+med:NICOTINE a med:ActiveIngredient ;
+    rdfs:label "NICOTINE" .
+
+med:Nelson_Bach_USA_Ltd a med:Manufacturer ;
+    rdfs:label "Nelson Bach USA, Ltd." .
+
+med:OASIS_Medical_Inc a med:Manufacturer ;
+    rdfs:label "OASIS Medical, Inc." .
+
+med:OCTISALATE a med:ActiveIngredient ;
+    rdfs:label "OCTISALATE" .
+
+med:ORNITHOGALUM_UMBELLATUM_WHOLE a med:ActiveIngredient ;
+    rdfs:label "ORNITHOGALUM UMBELLATUM WHOLE" .
+
+med:PETROLATUM a med:ActiveIngredient ;
+    rdfs:label "PETROLATUM" .
+
+med:PRUNUS_CERASIFERA_FLOWER a med:ActiveIngredient ;
+    rdfs:label "PRUNUS CERASIFERA FLOWER" .
+
+med:Parfums_Christian_Dior a med:Manufacturer ;
+    rdfs:label "Parfums Christian Dior" .
+
+med:RESORCINOL a med:ActiveIngredient ;
+    rdfs:label "RESORCINOL" .
+
+med:Rite_Aid_Corporation a med:Manufacturer ;
+    rdfs:label "Rite Aid Corporation" .
+
+med:Rxhomeo_Private_Limited_dba_Rxhomeo_Inc a med:Manufacturer ;
+    rdfs:label "Rxhomeo Private Limited d.b.a. Rxhomeo, Inc" .
+
+med:SACUBITRIL a med:ActiveIngredient ;
+    rdfs:label "SACUBITRIL" .
+
+med:SALICYLIC_ACID a med:ActiveIngredient ;
+    rdfs:label "SALICYLIC ACID" .
+
+med:SERTRALINE_HYDROCHLORIDE a med:ActiveIngredient ;
+    rdfs:label "SERTRALINE HYDROCHLORIDE" .
+
+med:SILICON_DIOXIDE a med:ActiveIngredient ;
+    rdfs:label "SILICON DIOXIDE" .
+
+med:SODIUM_FLUORIDE a med:ActiveIngredient ;
+    rdfs:label "SODIUM FLUORIDE" .
+
+med:Sante_Manufacturing_Inc a med:Manufacturer ;
+    rdfs:label "Sante Manufacturing Inc" .
+
+med:Sodalis_USA_LLC a med:Manufacturer ;
+    rdfs:label "Sodalis USA, LLC" .
+
+med:Sun_Pharmaceutical_Industries_Inc a med:Manufacturer ;
+    rdfs:label "Sun Pharmaceutical Industries, Inc." .
+
+med:TETRAHYDROZOLINE_HYDROCHLORIDE a med:ActiveIngredient ;
+    rdfs:label "TETRAHYDROZOLINE HYDROCHLORIDE" .
+
+med:TITANIUM_DIOXIDE a med:ActiveIngredient ;
+    rdfs:label "TITANIUM DIOXIDE" .
+
+med:TRAMETINIB_DIMETHYL_SULFOXIDE a med:ActiveIngredient ;
+    rdfs:label "TRAMETINIB DIMETHYL SULFOXIDE" .
+
+med:VALSARTAN a med:ActiveIngredient ;
+    rdfs:label "VALSARTAN" .
+
+med:VARENICLINE_TARTRATE a med:ActiveIngredient ;
+    rdfs:label "VARENICLINE TARTRATE" .
+
+med:Valu_Merchandisers_Company a med:Manufacturer ;
+    rdfs:label "Valu Merchandisers Company" .
+
+med:A-S_Medication_Solutions a med:Manufacturer ;
+    rdfs:label "A-S Medication Solutions" .
+
+med:ACETAMINOPHEN a med:ActiveIngredient ;
+    rdfs:label "ACETAMINOPHEN" .
+
+med:American_Health_Packaging a med:Manufacturer ;
+    rdfs:label "American Health Packaging" .
+
+med:BENZALKONIUM_CHLORIDE a med:ActiveIngredient ;
+    rdfs:label "BENZALKONIUM CHLORIDE" .
+
+med:Novartis_Pharmaceuticals_Corporation a med:Manufacturer ;
+    rdfs:label "Novartis Pharmaceuticals Corporation" .
+
+med:POLYETHYLENE_GLYCOL_400 a med:ActiveIngredient ;
+    rdfs:label "POLYETHYLENE GLYCOL 400" .
+
+med:POVIDONE-IODINE a med:ActiveIngredient ;
+    rdfs:label "POVIDONE-IODINE" .
+
+med:Proficient_Rx_LP a med:Manufacturer ;
+    rdfs:label "Proficient Rx LP" .
+
+med:Strategic_Sourcing_Services_LLC a med:Manufacturer ;
+    rdfs:label "Strategic Sourcing Services LLC" .
+
+med:Walmart_Inc a med:Manufacturer ;
+    rdfs:label "Walmart Inc." .
+
+med:OPHTHALMIC a med:Route ;
+    rdfs:label "OPHTHALMIC" .
+
+med:Route a owl:Class .
+
+med:TOPICAL a med:Route ;
+    rdfs:label "TOPICAL" .
+
+med:ORAL a med:Route ;
+    rdfs:label "ORAL" .
+
+med:Manufacturer a owl:Class .
+
+med:Drug a owl:Class .
+
+med:ActiveIngredient a owl:Class .
+

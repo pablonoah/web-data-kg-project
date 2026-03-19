@@ -1,0 +1,355 @@
+<http://example.org/medical/METHOCARBAMOL> <http://www.w3.org/2000/01/rdf-schema#label> "METHOCARBAMOL" .
+<http://example.org/medical/Mekinist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/LANOLIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Etodolac> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Anticavity_Rinse> <http://example.org/medical/prop/brandName> "Anticavity Rinse"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/prop/hasActiveIngredient> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/GLIMEPIRIDE> <http://www.w3.org/2000/01/rdf-schema#label> "GLIMEPIRIDE" .
+<http://example.org/medical/Sertraline_Hydrochloride> <http://example.org/medical/prop/genericName> "SERTRALINE HYDROCHLORIDE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Nicotine> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/ENTRESTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/ISOPROPYL_ALCOHOL> <http://www.w3.org/2000/01/rdf-schema#label> "ISOPROPYL ALCOHOL" .
+<http://example.org/medical/basic_care_acetaminophen> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Aurobindo_Pharma_Limited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/prop/hasRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/medical/Drug> .
+<http://example.org/medical/LANOLIN> <http://www.w3.org/2000/01/rdf-schema#label> "LANOLIN" .
+<http://example.org/medical/Proficient_Rx_LP> <http://www.w3.org/2000/01/rdf-schema#label> "Proficient Rx LP" .
+<http://example.org/medical/Anticavity_Rinse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/OCTISALATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Acid_Reducer> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Parfums_Christian_Dior> .
+<http://example.org/medical/SILICEA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/ENTRESTO> <http://example.org/medical/prop/genericName> "SACUBITRIL AND VALSARTAN"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Atlantis_Consumer_Healthcare_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "Atlantis Consumer Healthcare, Inc." .
+<http://example.org/medical/Calcium_Acetate> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/CALCIUM_ACETATE> .
+<http://example.org/medical/Etodolac> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/ETODOLAC> .
+<http://example.org/medical/SILICON_DIOXIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Foster_and_Thrive_Dry_Eye_Relief> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/OPHTHALMIC> .
+<http://example.org/medical/Mekinist> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Novartis_Pharmaceuticals_Corporation> .
+<http://example.org/medical/GLIMEPIRIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Nelson_Bach_USA_Ltd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Anticavity_Rinse> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Meijer_Distribution_Inc> .
+<http://example.org/medical/Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/medical/Methocarbamol> <http://example.org/medical/prop/genericName> "METHOCARBAMOL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/OASIS_Tears_Lubricant_Eye> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/GLYCERIN> .
+<http://example.org/medical/Foster_and_Thrive_Advanced_Relief_Eye_Drops> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/OPHTHALMIC> .
+<http://example.org/medical/Varenicline> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/VARENICLINE_TARTRATE> .
+<http://example.org/medical/Naproxen> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/NAPROXEN> .
+<http://example.org/medical/Varenicline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Lights_Medical_Manufacture_Co_Ltd> <http://www.w3.org/2000/01/rdf-schema#label> "Lights Medical Manufacture Co., Ltd." .
+<http://example.org/medical/Lights_Povindone_Iodine_Scrub> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/POVIDONE-IODINE> .
+<http://example.org/medical/FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Fludrocortisone_Acetate> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/OCTISALATE> <http://www.w3.org/2000/01/rdf-schema#label> "OCTISALATE" .
+<http://example.org/medical/Fludrocortisone_Acetate> <http://example.org/medical/prop/brandName> "Fludrocortisone Acetate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Quick_Action> <http://example.org/medical/prop/genericName> "SALICYLIC ACID"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Betamethasone_Dipropionate> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/ETODOLAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/CALCIUM_ACETATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/basic_care_acetaminophen> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Amazoncom_Services_LLC> .
+<http://example.org/medical/ESOMEPRAZOLE_MAGNESIUM> <http://www.w3.org/2000/01/rdf-schema#label> "ESOMEPRAZOLE MAGNESIUM" .
+<http://example.org/medical/OASIS_Tears_Lubricant_Eye> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/OPHTHALMIC> .
+<http://example.org/medical/RESORCINOL> <http://www.w3.org/2000/01/rdf-schema#label> "RESORCINOL" .
+<http://example.org/medical/American_Health_Packaging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/ESOMEPRAZOLE_MAGNESIUM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/TETRAHYDROZOLINE_HYDROCHLORIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Cariba_International> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/FLUDROCORTISONE_ACETATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/prop/hasDosageForm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/medical/Drug> .
+<http://example.org/medical/SILICEA> <http://example.org/medical/prop/genericName> "SILICEA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/AESCULUS_HIPPOCASTANUM_FLOWER> <http://www.w3.org/2000/01/rdf-schema#label> "AESCULUS HIPPOCASTANUM FLOWER" .
+<http://example.org/medical/Nicotine> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Rite_Aid_Corporation> .
+<http://example.org/medical/ALUMINUM_CHLOROHYDRATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Quick_Action> <http://example.org/medical/prop/brandName> "Quick Action"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Anticavity_Rinse> <http://example.org/medical/prop/genericName> "SODIUM FLUORIDE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/CVS_Pharmacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Foster_and_Thrive_Dry_Eye_Relief> <http://example.org/medical/prop/genericName> "POLYETHYLENE GLYCOL 400"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Betamethasone_Dipropionate> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/BETAMETHASONE_DIPROPIONATE> .
+<http://example.org/medical/SILICON_DIOXIDE> <http://www.w3.org/2000/01/rdf-schema#label> "SILICON DIOXIDE" .
+<http://example.org/medical/BETAMETHASONE_DIPROPIONATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/TITANIUM_DIOXIDE> <http://www.w3.org/2000/01/rdf-schema#label> "TITANIUM DIOXIDE" .
+<http://example.org/medical/ACETAMINOPHEN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Glimepiride> <http://example.org/medical/prop/genericName> "GLIMEPIRIDE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Moisturizing_Antibacterial> <http://example.org/medical/prop/genericName> "BENZALKONIUM CHLORIDE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/anti_itch> <http://example.org/medical/prop/brandName> "anti itch"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Mekinist> <http://example.org/medical/prop/brandName> "Mekinist"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/VARENICLINE_TARTRATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/BENZALKONIUM_CHLORIDE> <http://www.w3.org/2000/01/rdf-schema#label> "BENZALKONIUM CHLORIDE" .
+<http://example.org/medical/prop/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/VALSARTAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Calcium_Acetate> <http://example.org/medical/prop/genericName> "CALCIUM ACETATE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Amazoncom_Services_LLC> <http://www.w3.org/2000/01/rdf-schema#label> "Amazon.com Services LLC" .
+<http://example.org/medical/Methocarbamol> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Rite_Aid_Corporation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Foster_and_Thrive_Dry_Eye_Relief> <http://example.org/medical/prop/brandName> "Foster and Thrive Dry Eye Relief"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/ORAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Route> .
+<http://example.org/medical/Pain_Reliever_Extra_Strength> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/ACETAMINOPHEN> .
+<http://example.org/medical/IMPATIENS_GLANDULIFERA_FLOWER> <http://www.w3.org/2000/01/rdf-schema#label> "IMPATIENS GLANDULIFERA FLOWER" .
+<http://example.org/medical/Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/medical/PRUNUS_CERASIFERA_FLOWER> <http://www.w3.org/2000/01/rdf-schema#label> "PRUNUS CERASIFERA FLOWER" .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/IMPATIENS_GLANDULIFERA_FLOWER> .
+<http://example.org/medical/BENZALKONIUM_CHLORIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Aurobindo_Pharma_Limited> <http://www.w3.org/2000/01/rdf-schema#label> "Aurobindo Pharma Limited" .
+<http://example.org/medical/Proficient_Rx_LP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Nelson_Bach_USA_Ltd> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Bach USA, Ltd." .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/brandName> "Rescue Sleep"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/OASIS_Medical_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "OASIS Medical, Inc." .
+<http://example.org/medical/Nicotine> <http://example.org/medical/prop/genericName> "NICOTINE POLACRILEX"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Naproxen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/HYDROCORTISONE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Cipla_USA_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "Cipla USA Inc.," .
+<http://example.org/medical/Anticavity_Rinse> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Sure_Complete_Confidence_Antiperspirant_Deodorant_Aerosol_Unscented> <http://example.org/medical/prop/brandName> "Sure Complete Confidence Antiperspirant Deodorant Aerosol, Unscented"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Drug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/medical/Thera_Plus_Maximum_Strength_Feminine_Anti-Itch> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/BENZOCAINE> .
+<http://example.org/medical/ActiveIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/CLEMATIS_VITALBA_FLOWER> .
+<http://example.org/medical/Betadine> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Atlantis_Consumer_Healthcare_Inc> .
+<http://example.org/medical/SACUBITRIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Etodolac> <http://example.org/medical/prop/brandName> "Etodolac"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Naproxen> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/A-S_Medication_Solutions> .
+<http://example.org/medical/DosageForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/medical/prop/hasRoute> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/medical/Route> .
+<http://example.org/medical/ALUMINUM_CHLOROHYDRATE> <http://www.w3.org/2000/01/rdf-schema#label> "ALUMINUM CHLOROHYDRATE" .
+<http://example.org/medical/Sure_Complete_Confidence_Antiperspirant_Deodorant_Aerosol_Unscented> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/ALUMINUM_CHLOROHYDRATE> .
+<http://example.org/medical/Strategic_Sourcing_Services_LLC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/OPHTHALMIC> <http://www.w3.org/2000/01/rdf-schema#label> "OPHTHALMIC" .
+<http://example.org/medical/FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/TITANIUM_DIOXIDE> .
+<http://example.org/medical/Methocarbamol> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/METHOCARBAMOL> .
+<http://example.org/medical/prop/hasDosageForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/medical/NAPROXEN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Pain_Reliever_Extra_Strength> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/ENTRESTO> <http://example.org/medical/prop/brandName> "ENTRESTO"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Foster_and_Thrive_Advanced_Relief_Eye_Drops> <http://example.org/medical/prop/genericName> "POLYETHYLENE GLYCOL 400, TETRAHYDROZOLINE HCL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Glimepiride> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/American_Health_Packaging> .
+<http://example.org/medical/prop/hasDosageForm> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/medical/DosageForm> .
+<http://example.org/medical/HELIANTHEMUM_NUMMULARIUM_FLOWER> <http://www.w3.org/2000/01/rdf-schema#label> "HELIANTHEMUM NUMMULARIUM FLOWER" .
+<http://example.org/medical/Naproxen> <http://example.org/medical/prop/brandName> "Naproxen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/VERADEX-E> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/PETROLATUM> .
+<http://example.org/medical/ABBE_Laboratories_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "ABBE Laboratories, Inc." .
+<http://example.org/medical/PETROLATUM> <http://www.w3.org/2000/01/rdf-schema#label> "PETROLATUM" .
+<http://example.org/medical/Meijer_Distribution_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Varenicline> <http://example.org/medical/prop/brandName> "Varenicline"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Sante_Manufacturing_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Valu_Merchandisers_Company> <http://www.w3.org/2000/01/rdf-schema#label> "Valu Merchandisers Company" .
+<http://example.org/medical/Sun_Pharmaceutical_Industries_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "Sun Pharmaceutical Industries, Inc." .
+<http://example.org/medical/American_Health_Packaging> <http://www.w3.org/2000/01/rdf-schema#label> "American Health Packaging" .
+<http://example.org/medical/ENTRESTO> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/VALSARTAN> .
+<http://example.org/medical/Thera_Plus_Maximum_Strength_Feminine_Anti-Itch> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/FOURSTAR_GROUP_USA_INC> .
+<http://example.org/medical/Foster_and_Thrive_Advanced_Relief_Eye_Drops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/CLEMATIS_VITALBA_FLOWER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Etodolac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/SILICEA> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Mekinist> <http://example.org/medical/prop/genericName> "TRAMETINIB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/basic_care_acetaminophen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Varenicline> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Thera_Plus_Maximum_Strength_Feminine_Anti-Itch> <http://example.org/medical/prop/genericName> "BENZOCAINE, RESORCINOL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Parfums_Christian_Dior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Lights_Povindone_Iodine_Scrub> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Lights_Medical_Manufacture_Co_Ltd> .
+<http://example.org/medical/Acid_Reducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Isopropyl_Alcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Sertraline_Hydrochloride> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/AESCULUS_HIPPOCASTANUM_FLOWER> .
+<http://example.org/medical/Antibacterial_2X> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Sante_Manufacturing_Inc> .
+<http://example.org/medical/Fludrocortisone_Acetate> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/FLUDROCORTISONE_ACETATE> .
+<http://example.org/medical/Foster_and_Thrive_Dry_Eye_Relief> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/POLYETHYLENE_GLYCOL_400> .
+<http://example.org/medical/ETODOLAC> <http://www.w3.org/2000/01/rdf-schema#label> "ETODOLAC" .
+<http://example.org/medical/POLYETHYLENE_GLYCOL_400> <http://www.w3.org/2000/01/rdf-schema#label> "POLYETHYLENE GLYCOL 400" .
+<http://example.org/medical/Cipla_USA_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Foster_and_Thrive_Advanced_Relief_Eye_Drops> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/POLYETHYLENE_GLYCOL_400> .
+<http://example.org/medical/ORNITHOGALUM_UMBELLATUM_WHOLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Etodolac> <http://example.org/medical/prop/genericName> "ETODOLAC"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Isopropyl_Alcohol> <http://example.org/medical/prop/brandName> "Isopropyl Alcohol"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/PETROLATUM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Quick_Action> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Walmart_Inc> .
+<http://example.org/medical/BENZOCAINE> <http://www.w3.org/2000/01/rdf-schema#label> "BENZOCAINE" .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Nelson_Bach_USA_Ltd> .
+<http://example.org/medical/ENTRESTO> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Pain_Reliever_Extra_Strength> <http://example.org/medical/prop/genericName> "ACETAMINOPHEN"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/FLUDROCORTISONE_ACETATE> <http://www.w3.org/2000/01/rdf-schema#label> "FLUDROCORTISONE ACETATE" .
+<http://example.org/medical/SERTRALINE_HYDROCHLORIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Isopropyl_Alcohol> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/Walmart_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/genericName> "HELIANTHEMUM NUMMULARIUM FLOWER, CLEMATIS VITALBA FLOWER, IMPATIENS GLANDULIFERA FLOWER, PRUNUS CERASIFERA FLOWER, ORNITHOGALUM UMBELLATUM, AND AESCULUS HIPPOCASTANUM FLOWER"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/ABBE_Laboratories_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/VERADEX-E> <http://example.org/medical/prop/genericName> "PETROLATUM AND LANOLIN"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Rxhomeo_Private_Limited_dba_Rxhomeo_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/OCTISALATE> .
+<http://example.org/medical/Betamethasone_Dipropionate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Antibacterial_2X> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/BENZALKONIUM_CHLORIDE> .
+<http://example.org/medical/Glimepiride> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Foster_and_Thrive_Advanced_Relief_Eye_Drops> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/TETRAHYDROZOLINE_HYDROCHLORIDE> .
+<http://example.org/medical/Foster_and_Thrive_Advanced_Relief_Eye_Drops> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Strategic_Sourcing_Services_LLC> .
+<http://example.org/medical/VERADEX-E> <http://example.org/medical/prop/brandName> "VERADEX-E"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Moisturizing_Antibacterial> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/Nicotine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/SILICEA> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Rxhomeo_Private_Limited_dba_Rxhomeo_Inc> .
+<http://example.org/medical/Isopropyl_Alcohol> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Cariba_International> .
+<http://example.org/medical/Moisturizing_Antibacterial> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/BENZALKONIUM_CHLORIDE> .
+<http://example.org/medical/Thera_Plus_Maximum_Strength_Feminine_Anti-Itch> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/RESORCINOL> .
+<http://example.org/medical/OASIS_Tears_Lubricant_Eye> <http://example.org/medical/prop/genericName> "GLYCERIN"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/VERADEX-E> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/LANOLIN> .
+<http://example.org/medical/A-S_Medication_Solutions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Sertraline_Hydrochloride> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Proficient_Rx_LP> .
+<http://example.org/medical/Fludrocortisone_Acetate> <http://example.org/medical/prop/genericName> "FLUDROCORTISONE ACETATE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/ORAL> <http://www.w3.org/2000/01/rdf-schema#label> "ORAL" .
+<http://example.org/medical/Acid_Reducer> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/ESOMEPRAZOLE_MAGNESIUM> .
+<http://example.org/medical/Moisturizing_Antibacterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Cariba_International> <http://www.w3.org/2000/01/rdf-schema#label> "Cariba International" .
+<http://example.org/medical/Parfums_Christian_Dior> <http://www.w3.org/2000/01/rdf-schema#label> "Parfums Christian Dior" .
+<http://example.org/medical/Calcium_Acetate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Sertraline_Hydrochloride> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/SERTRALINE_HYDROCHLORIDE> .
+<http://example.org/medical/prop/genericName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/medical/Novartis_Pharmaceuticals_Corporation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Sante_Manufacturing_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "Sante Manufacturing Inc" .
+<http://example.org/medical/Isopropyl_Alcohol> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/ISOPROPYL_ALCOHOL> .
+<http://example.org/medical/CVS_Pharmacy> <http://www.w3.org/2000/01/rdf-schema#label> "CVS Pharmacy" .
+<http://example.org/medical/Acid_Reducer> <http://example.org/medical/prop/brandName> "Acid Reducer"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Varenicline> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Aurobindo_Pharma_Limited> .
+<http://example.org/medical/TETRAHYDROZOLINE_HYDROCHLORIDE> <http://www.w3.org/2000/01/rdf-schema#label> "TETRAHYDROZOLINE HYDROCHLORIDE" .
+<http://example.org/medical/Nicotine> <http://example.org/medical/prop/brandName> "Nicotine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/anti_itch> <http://example.org/medical/prop/genericName> "HYDROCORTISONE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Sure_Complete_Confidence_Antiperspirant_Deodorant_Aerosol_Unscented> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/anti_itch> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/HYDROCORTISONE> .
+<http://example.org/medical/OASIS_Tears_Lubricant_Eye> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/OASIS_Medical_Inc> .
+<http://example.org/medical/Rite_Aid_Corporation> <http://www.w3.org/2000/01/rdf-schema#label> "Rite Aid Corporation" .
+<http://example.org/medical/Antibacterial_2X> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/Betamethasone_Dipropionate> <http://example.org/medical/prop/brandName> "Betamethasone Dipropionate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/HYDROCORTISONE> <http://www.w3.org/2000/01/rdf-schema#label> "HYDROCORTISONE" .
+<http://example.org/medical/Pain_Reliever_Extra_Strength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Sun_Pharmaceutical_Industries_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Foster_and_Thrive_Dry_Eye_Relief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/OASIS_Tears_Lubricant_Eye> <http://example.org/medical/prop/brandName> "OASIS Tears Lubricant Eye"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/TRAMETINIB_DIMETHYL_SULFOXIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/VERADEX-E> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/OASIS_Medical_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/FOURSTAR_GROUP_USA_INC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/ISOPROPYL_ALCOHOL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Meijer_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Sure_Complete_Confidence_Antiperspirant_Deodorant_Aerosol_Unscented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Antibacterial_2X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/FOURSTAR_GROUP_USA_INC> <http://www.w3.org/2000/01/rdf-schema#label> "FOURSTAR GROUP USA, INC." .
+<http://example.org/medical/Glimepiride> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/GLIMEPIRIDE> .
+<http://example.org/medical/FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/Betadine> <http://example.org/medical/prop/brandName> "Betadine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/prop/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/medical/Drug> .
+<http://example.org/medical/IMPATIENS_GLANDULIFERA_FLOWER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Amazoncom_Services_LLC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00> <http://example.org/medical/prop/brandName> "FOREVER SKIN GLOW 24h wear radiant foundation Perfection and hydration Concentrated floral skincare with suncreen Broad spectrum SPF 15 00"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/NAPROXEN> <http://www.w3.org/2000/01/rdf-schema#label> "NAPROXEN" .
+<http://example.org/medical/OPHTHALMIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Route> .
+<http://example.org/medical/Betamethasone_Dipropionate> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Sun_Pharmaceutical_Industries_Inc> .
+<http://example.org/medical/Anticavity_Rinse> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/SODIUM_FLUORIDE> .
+<http://example.org/medical/TOPICAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Route> .
+<http://example.org/medical/TRAMETINIB_DIMETHYL_SULFOXIDE> <http://www.w3.org/2000/01/rdf-schema#label> "TRAMETINIB DIMETHYL SULFOXIDE" .
+<http://example.org/medical/PRUNUS_CERASIFERA_FLOWER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/VERADEX-E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Pain_Reliever_Extra_Strength> <http://example.org/medical/prop/brandName> "Pain Reliever Extra Strength"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/CALCIUM_ACETATE> <http://www.w3.org/2000/01/rdf-schema#label> "CALCIUM ACETATE" .
+<http://example.org/medical/Sodalis_USA_LLC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/POVIDONE-IODINE> <http://www.w3.org/2000/01/rdf-schema#label> "POVIDONE-IODINE" .
+<http://example.org/medical/Mekinist> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/BETAMETHASONE_DIPROPIONATE> <http://www.w3.org/2000/01/rdf-schema#label> "BETAMETHASONE DIPROPIONATE" .
+<http://example.org/medical/Acid_Reducer> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/CVS_Pharmacy> .
+<http://example.org/medical/POLYETHYLENE_GLYCOL_400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/VALSARTAN> <http://www.w3.org/2000/01/rdf-schema#label> "VALSARTAN" .
+<http://example.org/medical/Acid_Reducer> <http://example.org/medical/prop/genericName> "ESOMEPRAZOLE MAGNESIUM"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Methocarbamol> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Proficient_Rx_LP> .
+<http://example.org/medical/Lights_Medical_Manufacture_Co_Ltd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Rescue_Sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/anti_itch> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Meijer_Inc> .
+<http://example.org/medical/Sertraline_Hydrochloride> <http://example.org/medical/prop/brandName> "Sertraline Hydrochloride"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Thera_Plus_Maximum_Strength_Feminine_Anti-Itch> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/SALICYLIC_ACID> <http://www.w3.org/2000/01/rdf-schema#label> "SALICYLIC ACID" .
+<http://example.org/medical/SERTRALINE_HYDROCHLORIDE> <http://www.w3.org/2000/01/rdf-schema#label> "SERTRALINE HYDROCHLORIDE" .
+<http://example.org/medical/NICOTINE> <http://www.w3.org/2000/01/rdf-schema#label> "NICOTINE" .
+<http://example.org/medical/METHOCARBAMOL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Naproxen> <http://example.org/medical/prop/genericName> "NAPROXEN"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Strategic_Sourcing_Services_LLC> <http://www.w3.org/2000/01/rdf-schema#label> "Strategic Sourcing Services LLC" .
+<http://example.org/medical/GLYCERIN> <http://www.w3.org/2000/01/rdf-schema#label> "GLYCERIN" .
+<http://example.org/medical/Betadine> <http://example.org/medical/prop/genericName> "POVIDONE-IODINE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Nicotine> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/NICOTINE> .
+<http://example.org/medical/anti_itch> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/Thera_Plus_Maximum_Strength_Feminine_Anti-Itch> <http://example.org/medical/prop/brandName> "Thera Plus Maximum Strength Feminine Anti-Itch"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Antibacterial_2X> <http://example.org/medical/prop/genericName> "BENZALKONIUM CHLORIDE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Methocarbamol> <http://example.org/medical/prop/brandName> "Methocarbamol"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/basic_care_acetaminophen> <http://example.org/medical/prop/genericName> "ACETAMINOPHEN"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/HELIANTHEMUM_NUMMULARIUM_FLOWER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Isopropyl_Alcohol> <http://example.org/medical/prop/genericName> "ISOPROPYL ALCOHOL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/OASIS_Tears_Lubricant_Eye> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/SILICEA> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/SILICON_DIOXIDE> .
+<http://example.org/medical/Foster_and_Thrive_Advanced_Relief_Eye_Drops> <http://example.org/medical/prop/brandName> "Foster and Thrive Advanced Relief Eye Drops"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Meijer_Distribution_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "Meijer Distribution, Inc." .
+<http://example.org/medical/Sure_Complete_Confidence_Antiperspirant_Deodorant_Aerosol_Unscented> <http://example.org/medical/prop/genericName> "ALUMINUM CHLOROHYDRATE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/ENTRESTO> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/SACUBITRIL> .
+<http://example.org/medical/prop/hasActiveIngredient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/medical/Drug> .
+<http://example.org/medical/TOPICAL> <http://www.w3.org/2000/01/rdf-schema#label> "TOPICAL" .
+<http://example.org/medical/Sertraline_Hydrochloride> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/SODIUM_FLUORIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Calcium_Acetate> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Cipla_USA_Inc> .
+<http://example.org/medical/ACETAMINOPHEN> <http://www.w3.org/2000/01/rdf-schema#label> "ACETAMINOPHEN" .
+<http://example.org/medical/anti_itch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/SACUBITRIL> <http://www.w3.org/2000/01/rdf-schema#label> "SACUBITRIL" .
+<http://example.org/medical/Lights_Povindone_Iodine_Scrub> <http://example.org/medical/prop/brandName> "Lights Povindone Iodine Scrub"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Fludrocortisone_Acetate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Moisturizing_Antibacterial> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Walmart_Inc> .
+<http://example.org/medical/Varenicline> <http://example.org/medical/prop/genericName> "VARENICLINE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Quick_Action> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/SALICYLIC_ACID> .
+<http://example.org/medical/SALICYLIC_ACID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/prop/hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/medical/NICOTINE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/prop/hasActiveIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/medical/Moisturizing_Antibacterial> <http://example.org/medical/prop/brandName> "Moisturizing Antibacterial"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/PRUNUS_CERASIFERA_FLOWER> .
+<http://example.org/medical/A-S_Medication_Solutions> <http://www.w3.org/2000/01/rdf-schema#label> "A-S Medication Solutions" .
+<http://example.org/medical/Betadine> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/Foster_and_Thrive_Dry_Eye_Relief> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Strategic_Sourcing_Services_LLC> .
+<http://example.org/medical/Antibacterial_2X> <http://example.org/medical/prop/brandName> "Antibacterial 2X"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Novartis_Pharmaceuticals_Corporation> <http://www.w3.org/2000/01/rdf-schema#label> "Novartis Pharmaceuticals Corporation" .
+<http://example.org/medical/Fludrocortisone_Acetate> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/American_Health_Packaging> .
+<http://example.org/medical/Lights_Povindone_Iodine_Scrub> <http://example.org/medical/prop/genericName> "POVIDONE-IODINE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/ORNITHOGALUM_UMBELLATUM_WHOLE> <http://www.w3.org/2000/01/rdf-schema#label> "ORNITHOGALUM UMBELLATUM WHOLE" .
+<http://example.org/medical/basic_care_acetaminophen> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/ACETAMINOPHEN> .
+<http://example.org/medical/FOREVER_SKIN_GLOW_24h_wear_radiant_foundation_Perfection_and_hydration_Concentrated_floral_skincare_with_suncreen_Broad_spectrum_SPF_15_00> <http://example.org/medical/prop/genericName> "OCTISALATE, TITANIUM DIOXIDE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Lights_Povindone_Iodine_Scrub> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/POVIDONE-IODINE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Glimepiride> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/RESORCINOL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/HELIANTHEMUM_NUMMULARIUM_FLOWER> .
+<http://example.org/medical/BENZOCAINE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/AESCULUS_HIPPOCASTANUM_FLOWER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/ORNITHOGALUM_UMBELLATUM_WHOLE> .
+<http://example.org/medical/ENTRESTO> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Novartis_Pharmaceuticals_Corporation> .
+<http://example.org/medical/Betadine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/TITANIUM_DIOXIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Meijer_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "Meijer, Inc." .
+<http://example.org/medical/Betamethasone_Dipropionate> <http://example.org/medical/prop/genericName> "BETAMETHASONE DIPROPIONATE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Calcium_Acetate> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Quick_Action> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/TOPICAL> .
+<http://example.org/medical/Betadine> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/POVIDONE-IODINE> .
+<http://example.org/medical/Calcium_Acetate> <http://example.org/medical/prop/brandName> "Calcium Acetate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Walmart_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "Walmart Inc." .
+<http://example.org/medical/SILICEA> <http://example.org/medical/prop/brandName> "SILICEA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/Thera_Plus_Maximum_Strength_Feminine_Anti-Itch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/VARENICLINE_TARTRATE> <http://www.w3.org/2000/01/rdf-schema#label> "VARENICLINE TARTRATE" .
+<http://example.org/medical/Rxhomeo_Private_Limited_dba_Rxhomeo_Inc> <http://www.w3.org/2000/01/rdf-schema#label> "Rxhomeo Private Limited d.b.a. Rxhomeo, Inc" .
+<http://example.org/medical/GLYCERIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/ActiveIngredient> .
+<http://example.org/medical/Valu_Merchandisers_Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Mekinist> <http://example.org/medical/prop/hasActiveIngredient> <http://example.org/medical/TRAMETINIB_DIMETHYL_SULFOXIDE> .
+<http://example.org/medical/Sure_Complete_Confidence_Antiperspirant_Deodorant_Aerosol_Unscented> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Sodalis_USA_LLC> .
+<http://example.org/medical/Etodolac> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/A-S_Medication_Solutions> .
+<http://example.org/medical/VERADEX-E> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/ABBE_Laboratories_Inc> .
+<http://example.org/medical/Sodalis_USA_LLC> <http://www.w3.org/2000/01/rdf-schema#label> "Sodalis USA, LLC" .
+<http://example.org/medical/Pain_Reliever_Extra_Strength> <http://example.org/medical/prop/hasManufacturer> <http://example.org/medical/Valu_Merchandisers_Company> .
+<http://example.org/medical/Lights_Povindone_Iodine_Scrub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/SODIUM_FLUORIDE> <http://www.w3.org/2000/01/rdf-schema#label> "SODIUM FLUORIDE" .
+<http://example.org/medical/CLEMATIS_VITALBA_FLOWER> <http://www.w3.org/2000/01/rdf-schema#label> "CLEMATIS VITALBA FLOWER" .
+<http://example.org/medical/Methocarbamol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/basic_care_acetaminophen> <http://example.org/medical/prop/brandName> "basic care acetaminophen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/prop/hasRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/medical/Glimepiride> <http://example.org/medical/prop/brandName> "Glimepiride"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/medical/prop/brandName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/medical/Rescue_Sleep> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .
+<http://example.org/medical/Quick_Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Drug> .
+<http://example.org/medical/Atlantis_Consumer_Healthcare_Inc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/medical/Manufacturer> .
+<http://example.org/medical/Naproxen> <http://example.org/medical/prop/hasRoute> <http://example.org/medical/ORAL> .

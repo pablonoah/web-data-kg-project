@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prop: <http://example.org/medical/prop/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+
+prop:brandName owl:equivalentProperty wdt:P1716 .
+
+prop:hasActiveIngredient owl:equivalentProperty wdt:P3781 .
+
+prop:hasManufacturer owl:equivalentProperty wdt:P176 .
+
+prop:hasRoute owl:equivalentProperty wdt:P636 .

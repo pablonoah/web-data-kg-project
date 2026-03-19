@@ -1,0 +1,37 @@
+============================================================
+KNOWLEDGE BASE - STATISTICS REPORT
+============================================================
+
+Total triples:    62178
+Total entities:   53920
+Total relations:  365
+
+--- Sources ---
+Private KB:            355 triples
+Entity alignment:      138 triples
+Predicate alignment:   4 triples
+Expanded (Wikidata):   61733 triples
+
+--- Top 20 Predicates ---
+  P176                                               20002
+  P279                                               15049
+  P31                                                10058
+  P2175                                              7043
+  P636                                               3028
+  P3781                                              2905
+  P703                                               261
+  P6689                                              226
+  P4964                                              220
+  P769                                               130
+  22-rdf-syntax-ns#type                              110
+  P638                                               99
+  rdf-schema#label                                   93
+  P3640                                              83
+  P652                                               76
+  P3780                                              73
+  P10376                                             64
+  owl#sameAs                                         60
+  P361                                               53
+  P2868                                              52
+
+============================================================

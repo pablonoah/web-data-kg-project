@@ -1,0 +1,196 @@
+## SPARQL Queries - Family Ontology
+## Part 3: Semantic Web TD Protege
+## PREFIX to use in Protege SnapSPARQL 
+
+
+## ============================================================
+## Queries 1-4: Basic queries with OWL inference
+## ============================================================
+
+## Query 1: How old is Peter?
+SELECT ?age
+WHERE {
+    ns:Peter ns:age ?age .
+}
+
+## Query 2: Who are Sylvie's parents?
+SELECT ?parent
+WHERE {
+    ns:Sylvie ns:isChildOf ?parent .
+}
+
+## Query 3: The women over 30 years?
+SELECT ?person ?age
+WHERE {
+    ?person rdf:type ns:Female .
+    ?person ns:age ?age .
+    FILTER (?age > 30)
+}
+
+## Query 4: What are the instances of Person?
+SELECT ?person
+WHERE {
+    ?person rdf:type ns:Person .
+}
+
+## ============================================================
+## Queries 5-13: List instances of classes
+## ============================================================
+
+## Query 5: List the instances of the class Son
+SELECT ?son
+WHERE {
+    ?son rdf:type ns:Son .
+}
+
+## Query 6: List the instances of the class Daughter
+SELECT ?daughter
+WHERE {
+    ?daughter rdf:type ns:Daughter .
+}
+
+## Query 7: List the instances of the class Parent
+SELECT ?parent
+WHERE {
+    ?parent rdf:type ns:Parent .
+}
+
+## Query 8: List the instances of the class Father
+SELECT ?father
+WHERE {
+    ?father rdf:type ns:Father .
+}
+
+## Query 9: List the instances of the class Mother
+SELECT ?mother
+WHERE {
+    ?mother rdf:type ns:Mother .
+}
+
+## Query 10: List the instances of the class Grandmother
+SELECT ?grandmother
+WHERE {
+    ?grandmother rdf:type ns:Grandmother .
+}
+
+## Query 11: List the instances of the class Grandfather
+SELECT ?grandfather
+WHERE {
+    ?grandfather rdf:type ns:Grandfather .
+}
+
+## Query 12: List the instances of the class Brother
+SELECT ?brother
+WHERE {
+    ?brother rdf:type ns:Brother .
+}
+
+## Query 13: List the instances of the class Sister
+SELECT ?sister
+WHERE {
+    ?sister rdf:type ns:Sister .
+}
+
+## OPTIONAL: Alternative queries for Brother/Sister if inference yields empty results
+## These use property-based patterns instead of class membership
+
+## Query 12-alt: Brothers (males who share a parent with someone)
+SELECT DISTINCT ?brother ?sibling
+WHERE {
+    ?brother rdf:type ns:Male .
+    ?brother ns:isChildOf ?parent .
+    ?sibling ns:isChildOf ?parent .
+    FILTER (?brother != ?sibling)
+}
+
+## Query 13-alt: Sisters (females who share a parent with someone)
+SELECT DISTINCT ?sister ?sibling
+WHERE {
+    ?sister rdf:type ns:Female .
+    ?sister ns:isChildOf ?parent .
+    ?sibling ns:isChildOf ?parent .
+    FILTER (?sister != ?sibling)
+}
+
+## ============================================================
+## Queries 14-20: Multi-condition queries
+## ============================================================
+
+## Query 14: List (name, age) of children of Peter
+SELECT ?childName ?childAge
+WHERE {
+    ?child ns:isChildOf ns:Peter .
+    ?child ns:name ?childName .
+    ?child ns:age ?childAge .
+}
+
+## Query 15: List of persons whose father is more than 40 years old
+SELECT ?personName ?fatherName ?fatherAge
+WHERE {
+    ?father ns:isFatherOf ?person .
+    ?father ns:age ?fatherAge .
+    ?person ns:name ?personName .
+    ?father ns:name ?fatherName .
+    FILTER (?fatherAge > 40)
+}
+
+## Query 16: List (name, age) of all French citizens + spouse name if married
+SELECT ?personName ?personAge ?spouseName
+WHERE {
+    ?person ns:nationality "French"^^xsd:string .
+    ?person ns:name ?personName .
+    ?person ns:age ?personAge .
+    OPTIONAL {
+        ?person ns:isMarriedWith ?spouse .
+        ?spouse ns:name ?spouseName .
+    }
+}
+
+## Query 17: List of persons who are brother of someone
+SELECT DISTINCT ?brotherName
+WHERE {
+    ?brother ns:isBrotherOf ?someone .
+    ?brother ns:name ?brotherName .
+}
+
+## Query 17-alt: If isBrotherOf not asserted, use child-based pattern
+SELECT DISTINCT ?brotherName
+WHERE {
+    ?brother rdf:type ns:Male .
+    ?brother ns:isChildOf ?parent .
+    ?sibling ns:isChildOf ?parent .
+    ?brother ns:name ?brotherName .
+    FILTER (?brother != ?sibling)
+}
+
+## Query 18: List of persons who are daughter of someone
+SELECT DISTINCT ?daughterName
+WHERE {
+    ?daughter ns:isDaughterOf ?someone .
+    ?daughter ns:name ?daughterName .
+}
+
+## Query 19: List of persons who are uncle of someone
+SELECT DISTINCT ?uncleName
+WHERE {
+    ?uncle rdf:type ns:Uncle .
+    ?uncle ns:name ?uncleName .
+}
+
+## Query 19-alt: If Uncle class is empty, use property chain pattern
+SELECT DISTINCT ?uncleName
+WHERE {
+    ?uncle rdf:type ns:Male .
+    ?uncle ns:isChildOf ?grandparent .
+    ?parent ns:isChildOf ?grandparent .
+    ?parent ns:isParentOf ?child .
+    ?uncle ns:name ?uncleName .
+    FILTER (?uncle != ?parent)
+}
+
+## Query 20: List of persons who are married
+SELECT DISTINCT ?personName
+WHERE {
+    ?person ns:isMarriedWith ?spouse .
+    ?person ns:name ?personName .
+}
