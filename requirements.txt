@@ -1,0 +1,27 @@
+# Core
+rdflib>=6.0
+SPARQLWrapper>=2.0
+owlready2>=0.40
+requests>=2.28
+
+# NLP / NER
+spacy>=3.5
+trafilatura>=1.6
+
+# KGE
+numpy>=1.24
+scikit-learn>=1.2
+matplotlib>=3.7
+
+# KGE (optional - for advanced training)
+# pykeen>=1.10
+
+# Data
+pandas>=2.0
+
+# OWL Reasoning
+owlrl>=6.0
+
+# RAG (requires Ollama running locally)
+# Install Ollama: https://ollama.ai
+# Then: ollama pull llama3.2
