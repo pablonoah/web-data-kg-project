@@ -26,6 +26,11 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "llama3.2"  # or mistral, codellama, etc.
 
 
+def set_model(model):
+    global OLLAMA_MODEL
+    OLLAMA_MODEL = model
+
+
 def call_ollama(prompt, model=None):
     """Call Ollama API for LLM completion."""
     model = model or OLLAMA_MODEL
@@ -72,8 +77,29 @@ def extract_sparql(text):
     return None
 
 
+PREFIXES = """PREFIX med: <http://example.org/medical/>
+PREFIX prop: <http://example.org/medical/prop/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+"""
+
+
 def execute_sparql(graph, query):
-    """Execute SPARQL query on the RDF graph."""
+    """Execute SPARQL query on the RDF graph, auto-injecting missing prefixes."""
+    # Auto-inject prefixes if missing
+    if "PREFIX" not in query.upper():
+        query = PREFIXES + query
+    else:
+        # Add any missing prefixes
+        for line in PREFIXES.strip().split("\n"):
+            prefix_name = line.split(":")[0].replace("PREFIX ", "").strip()
+            if f"{prefix_name}:" in query and f"PREFIX {prefix_name}:" not in query:
+                query = line + "\n" + query
+
     try:
         results = graph.query(query)
         rows = []
@@ -330,11 +356,10 @@ def main():
     parser = argparse.ArgumentParser(description="RAG Pipeline: NL → SPARQL")
     parser.add_argument("--evaluate", action="store_true", help="Run evaluation")
     parser.add_argument("--kb", default="kg_artifacts/final_kb.ttl", help="Path to KB (TTL)")
-    parser.add_argument("--model", default=OLLAMA_MODEL, help="Ollama model name")
+    parser.add_argument("--model", default="llama3.2", help="Ollama model name")
     args = parser.parse_args()
 
-    global OLLAMA_MODEL
-    OLLAMA_MODEL = args.model
+    set_model(args.model)
 
     base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     os.chdir(base_dir)
