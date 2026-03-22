@@ -144,17 +144,60 @@ def self_repair_query(question, failed_query, error_msg, schema_summary, max_att
     return None
 
 
+def _color(text, code):
+    """Apply ANSI color code to text."""
+    return f"\033[{code}m{text}\033[0m"
+
+
+def _box(title, content, color="36"):
+    """Print a styled box with title and content."""
+    width = max(len(title) + 4, max((len(l) for l in content.split("\n")), default=0) + 4, 50)
+    print(f"\033[{color}m┌{'─' * (width - 2)}┐\033[0m")
+    print(f"\033[{color}m│\033[0m {_color(title, f'1;{color}')}{' ' * (width - len(title) - 3)}\033[{color}m│\033[0m")
+    print(f"\033[{color}m├{'─' * (width - 2)}┤\033[0m")
+    for line in content.split("\n"):
+        padding = width - len(line) - 3
+        print(f"\033[{color}m│\033[0m {line}{' ' * max(padding, 0)}\033[{color}m│\033[0m")
+    print(f"\033[{color}m└{'─' * (width - 2)}┘\033[0m")
+
+
+def _format_results_table(results, max_rows=10):
+    """Format results as a clean table."""
+    if not results:
+        return "  (no results)"
+    rows = []
+    for row in results[:max_rows]:
+        shortened = [v.split("/")[-1].replace("_", " ") if "/" in v else v for v in row]
+        rows.append(shortened)
+
+    # Calculate column widths
+    col_widths = [0] * len(rows[0])
+    for row in rows:
+        for i, val in enumerate(row):
+            col_widths[i] = max(col_widths[i], len(val))
+
+    lines = []
+    for row in rows:
+        cells = [val.ljust(col_widths[i]) for i, val in enumerate(row)]
+        lines.append("  " + " │ ".join(cells))
+
+    if len(results) > max_rows:
+        lines.append(f"  ... and {len(results) - max_rows} more rows")
+    return "\n".join(lines)
+
+
 def answer_question(question, graph, schema_summary, verbose=True):
     """Full RAG pipeline: NL → SPARQL → Execute → Self-repair if needed."""
     if verbose:
-        print(f"\nQ: {question}")
+        print(f"\n{_color('?', '1;33')} {_color(question, '1;37')}")
+        print()
 
     # Step 1: Generate SPARQL
     prompt_template = get_sparql_prompt_template()
     prompt = prompt_template.format(schema_summary=schema_summary, question=question)
 
     if verbose:
-        print("  Generating SPARQL query...")
+        print(f"  {_color('⟳', '33')} Generating SPARQL query...")
 
     llm_response = call_ollama(prompt)
     if not llm_response:
@@ -163,11 +206,13 @@ def answer_question(question, graph, schema_summary, verbose=True):
     query = extract_sparql(llm_response)
     if not query:
         if verbose:
-            print("  Could not extract SPARQL from LLM response")
+            print(f"  {_color('✗', '31')} Could not extract SPARQL from LLM response")
         return {"question": question, "query": None, "results": None, "error": "No SPARQL extracted"}
 
     if verbose:
-        print(f"  Generated query:\n    {query[:200]}...")
+        # Show query in a box
+        query_display = "\n".join("  " + l for l in query.strip().split("\n")[:8])
+        _box("SPARQL Query", query_display, "34")
 
     # Step 2: Execute
     results, error = execute_sparql(graph, query)
@@ -175,29 +220,31 @@ def answer_question(question, graph, schema_summary, verbose=True):
     # Step 3: Self-repair if error
     if error:
         if verbose:
-            print(f"  Query failed: {error}")
-            print("  Attempting self-repair...")
+            print(f"\n  {_color('✗', '31')} Query failed: {error}")
+            print(f"  {_color('⟳', '33')} Attempting self-repair...")
 
         repaired_query = self_repair_query(question, query, error, schema_summary)
         if repaired_query:
             if verbose:
-                print(f"  Repaired query:\n    {repaired_query[:200]}...")
+                query_display = "\n".join("  " + l for l in repaired_query.strip().split("\n")[:8])
+                _box("Repaired Query", query_display, "33")
             results, error2 = execute_sparql(graph, repaired_query)
             if error2:
                 if verbose:
-                    print(f"  Repair failed: {error2}")
+                    print(f"  {_color('✗', '31')} Repair failed: {error2}")
                 return {"question": question, "query": repaired_query, "results": None, "error": error2}
             query = repaired_query
 
     # Step 4: Format results
     if results is not None:
         if verbose:
-            print(f"  Results ({len(results)} rows):")
-            for row in results[:10]:
-                shortened = [v.split("/")[-1] if "/" in v else v for v in row]
-                print(f"    {' | '.join(shortened)}")
-            if len(results) > 10:
-                print(f"    ... and {len(results) - 10} more rows")
+            if len(results) > 0:
+                print(f"\n  {_color('✓', '32')} {_color(f'{len(results)} result(s)', '1;32')}")
+                print()
+                print(_format_results_table(results))
+            else:
+                print(f"\n  {_color('⚠', '33')} No results found")
+    print()
 
     return {"question": question, "query": query, "results": results, "error": error}
 
@@ -321,28 +368,33 @@ def run_evaluation(graph, schema_summary):
 
 def interactive_cli(graph, schema_summary):
     """Interactive command-line interface for the RAG system."""
-    print("\n" + "=" * 60)
-    print("  Medical KB Question Answering (RAG)")
-    print("  Type your question or 'quit' to exit")
-    print("=" * 60)
-    print("\nExample questions:")
-    print("  - What drugs contain acetaminophen?")
-    print("  - Who manufactures Entresto?")
-    print("  - List all oral drugs")
-    print("  - What active ingredients does Betadine have?")
     print()
+    print(_color("  ╔══════════════════════════════════════════════════════╗", "36"))
+    print(_color("  ║", "36") + _color("   Medical KB — Question Answering (RAG)            ", "1;37") + _color("║", "36"))
+    print(_color("  ║", "36") + _color("   NL → SPARQL with Self-Repair                     ", "37") + _color("║", "36"))
+    print(_color("  ╠══════════════════════════════════════════════════════╣", "36"))
+    print(_color("  ║", "36") + f"   KB: {_color(f'{len(graph)} triples', '1;32')}" + " " * (46 - len(f'{len(graph)} triples')) + _color("║", "36"))
+    print(_color("  ║", "36") + f"   LLM: {_color(OLLAMA_MODEL, '1;33')}" + " " * (45 - len(OLLAMA_MODEL)) + _color("║", "36"))
+    print(_color("  ╚══════════════════════════════════════════════════════╝", "36"))
+    print()
+    print(_color("  Example questions:", "37"))
+    print(f"    {_color('1.', '36')} What drugs contain acetaminophen?")
+    print(f"    {_color('2.', '36')} Who manufactures Entresto?")
+    print(f"    {_color('3.', '36')} List all oral drugs")
+    print(f"    {_color('4.', '36')} What active ingredients does Betadine have?")
+    print(f"\n  Type {_color('quit', '31')} to exit.\n")
 
     while True:
         try:
-            question = input("You: ").strip()
+            question = input(f"{_color('You', '1;35')}: ").strip()
         except (EOFError, KeyboardInterrupt):
-            print("\nGoodbye!")
+            print(f"\n{_color('Goodbye!', '36')}")
             break
 
         if not question:
             continue
         if question.lower() in ("quit", "exit", "q"):
-            print("Goodbye!")
+            print(f"{_color('Goodbye!', '36')}")
             break
 
         answer_question(question, graph, schema_summary, verbose=True)

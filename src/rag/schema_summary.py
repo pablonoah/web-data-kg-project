@@ -73,6 +73,34 @@ def extract_schema_summary(ttl_path="kg_artifacts/final_kb.ttl", max_samples=5):
             uri_short = str(s).replace(str(MED), "med:")
             summary.append(f"    - {uri_short} (label: \"{label}\")")
 
+    # Sample values for key properties (helps LLM use correct URIs)
+    summary.append(f"\n## Possible Values for Key Properties:")
+    for prop_name, label in [("hasRoute", "Routes"), ("hasDosageForm", "Dosage Forms")]:
+        prop_uri = PROP[prop_name]
+        values = sorted(set(
+            str(o).replace(str(MED), "med:")
+            for s, p, o in g.triples((None, prop_uri, None))
+            if str(o).startswith(str(MED))
+        ))
+        if values:
+            summary.append(f"\n  {label} (use with prop:{prop_name}):")
+            for v in values:
+                summary.append(f"    - {v}")
+
+    # Sample active ingredients
+    prop_uri = PROP["hasActiveIngredient"]
+    ingredients = sorted(set(
+        str(o).replace(str(MED), "med:")
+        for s, p, o in g.triples((None, prop_uri, None))
+        if str(o).startswith(str(MED))
+    ))[:15]
+    if ingredients:
+        summary.append(f"\n  Active Ingredients (use with prop:hasActiveIngredient):")
+        for v in ingredients:
+            summary.append(f"    - {v}")
+        if len(list(g.triples((None, prop_uri, None)))) > 15:
+            summary.append(f"    ... and more")
+
     # Namespace prefixes
     summary.append(f"\n## Prefixes:")
     summary.append(f"  PREFIX med: <http://example.org/medical/>")
@@ -89,27 +117,21 @@ def extract_schema_summary(ttl_path="kg_artifacts/final_kb.ttl", max_samples=5):
 
 def get_sparql_prompt_template():
     """Return the prompt template for NL→SPARQL conversion."""
-    return """You are a SPARQL query generator for a medical/pharmaceutical knowledge base.
+    return """You are a SPARQL query generator. You MUST use ONLY the private KB properties listed below.
+
+RULES (follow strictly):
+1. ALWAYS use prop: properties (prop:hasRoute, prop:hasManufacturer, prop:hasActiveIngredient, prop:brandName, prop:genericName)
+2. NEVER use wdt: properties. They will NOT work for answering questions.
+3. Route values are URIs: med:ORAL, med:TOPICAL, med:OPHTHALMIC
+4. Ingredient/manufacturer values are URIs in med: namespace, UPPERCASE with underscores (e.g., med:ACETAMINOPHEN)
+5. Return ONLY the SPARQL query in a ```sparql block, no explanation.
 
 {schema_summary}
 
-## Instructions:
-- Convert the user's natural language question into a valid SPARQL query.
-- Use the prefixes listed above.
-- For drug lookups, use med: namespace (e.g., med:Acetaminophen).
-- Entity names use underscores instead of spaces (e.g., med:CVS_Pharmacy).
-- For Wikidata properties, use wdt: namespace.
-- Return ONLY the SPARQL query, no explanation.
-- If the query involves finding drugs by ingredient, use prop:hasActiveIngredient.
-- If the query involves manufacturers, use prop:hasManufacturer.
-- If the query involves routes (oral, topical), use prop:hasRoute.
-
 ## Examples:
+
 Q: What drugs contain acetaminophen?
 ```sparql
-PREFIX med: <http://example.org/medical/>
-PREFIX prop: <http://example.org/medical/prop/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?drug ?label WHERE {{
     ?drug prop:hasActiveIngredient med:ACETAMINOPHEN .
     ?drug rdfs:label ?label .
@@ -118,9 +140,6 @@ SELECT ?drug ?label WHERE {{
 
 Q: Who manufactures Entresto?
 ```sparql
-PREFIX med: <http://example.org/medical/>
-PREFIX prop: <http://example.org/medical/prop/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?manufacturer ?label WHERE {{
     med:ENTRESTO prop:hasManufacturer ?manufacturer .
     ?manufacturer rdfs:label ?label .
@@ -129,12 +148,39 @@ SELECT ?manufacturer ?label WHERE {{
 
 Q: List all oral drugs.
 ```sparql
-PREFIX med: <http://example.org/medical/>
-PREFIX prop: <http://example.org/medical/prop/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?drug ?label WHERE {{
     ?drug prop:hasRoute med:ORAL .
     ?drug rdfs:label ?label .
+}}
+```
+
+Q: List all ophthalmic drugs.
+```sparql
+SELECT ?drug ?label WHERE {{
+    ?drug prop:hasRoute med:OPHTHALMIC .
+    ?drug rdfs:label ?label .
+}}
+```
+
+Q: List all topical drugs.
+```sparql
+SELECT ?drug ?label WHERE {{
+    ?drug prop:hasRoute med:TOPICAL .
+    ?drug rdfs:label ?label .
+}}
+```
+
+Q: How many drugs are in the knowledge base?
+```sparql
+SELECT (COUNT(?drug) AS ?count) WHERE {{
+    ?drug a med:Drug .
+}}
+```
+
+Q: What are all the routes of administration?
+```sparql
+SELECT DISTINCT ?route WHERE {{
+    ?drug prop:hasRoute ?route .
 }}
 ```
 

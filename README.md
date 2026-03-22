@@ -38,8 +38,8 @@ project/
 
 ```bash
 # Clone the repository
-git clone <repo-url>
-cd project
+git clone https://github.com/noahlips/web-data-kg-project.git
+cd web-data-kg-project
 
 # Create virtual environment
 python -m venv venv
@@ -145,6 +145,17 @@ You: What drugs contain acetaminophen?
 ```
 
 ![RAG Demo Screenshot](reports/rag_demo_screenshot.png)
+
+## Screenshots
+
+### KGE Model Comparison
+![KGE Comparison](reports/kge_comparison.png)
+
+### t-SNE Entity Embeddings
+![t-SNE Embeddings](reports/tsne_embeddings.png)
+
+### Size Sensitivity Analysis
+![Size Sensitivity](reports/size_sensitivity.png)
 
 ## KB Statistics
 
