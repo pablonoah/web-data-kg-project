@@ -272,8 +272,7 @@ You: What drugs contain acetaminophen?
     Pain_Reliever_Extra_Strength | Pain Reliever Extra Strength
 ```
 
-*(See `reports/rag_demo_screenshot.png`)*
-
+![RAG Demo Screenshot](rag_demo_screenshot.png)
 ---
 
 ## 6. Critical Reflection

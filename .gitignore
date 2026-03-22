@@ -34,3 +34,10 @@ kg_artifacts/expanded_kb.ttl
 # Environment
 .env
 *.log
+
+# Personal files (not for GitHub)
+reports/demo_presentation.pptx
+reports/speech_script.txt
+reports/final_report.docx
+reports/final_report.md
+.claude/
